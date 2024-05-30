@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <title>Amigo Secreto</title>    
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <section class="box1">
+            <div class="tituloAmigo">
+                <h1 class="title">Amigo Secreto</h1>
+            </div>
+
+            <div class="boxAdd">
+                <form class="form">
+                    <label class="tituloLabel1">
+                        Adicione um amigo ao sorteio:
+                    </label>
+                    <input id="nome_amigo" class="form_input" type="text" placeholder="Digite o nome do amigo">
+                    <div id="mensagemErro" style="color: red;"></div>
+                    <div class="botoes">
+                        <button type="button" id="add" class="botao">Adicionar</button>
+                        <button type="button" id="embaralhar" class="botao">Sortear</button>
+                        <button type="button" id="reiniciar" class="botao">Reiniciar</button>
+                    </div>
+                </form>
+
+                <article class="grupoAmigo">
+                    <p class="tituloLabel2">Amigos adicionados:</p>
+                    <div class="amigosContainer">
+                        <p id="listaAmigos"></p>
+                    </div>
+                </article>
+
+                <article class="resultadoSorteio">
+                    <p class="tituloLabel2">Sorteio:</p>
+                    <div class="sorteioContainer">
+                        <p id="listaSorteio"></p>
+                    </div>
+                </article>
+            
+                <footer>
+                    <p>Desenvolvido por:</p>
+                    <img src="images/Logo Transparente Peq.png">
+                    </footer>
+            
+            </div>            
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

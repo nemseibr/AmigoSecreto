@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/presentes.png'); /* Caminho para sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem */
+    height: 100vh; /* Garante que o body tenha a altura total da viewport */
+    font-family: 'Poetsen One', sans-serif; /* Aplica a fonte escolhida */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilize o resto do seu conteúdo aqui */
+.box1 {
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    /* Criação do gradiente */
+    background-image: linear-gradient(to right, rgb(0, 186, 199), rgb(253, 188, 186), rgb(254, 184, 1));
+    -webkit-background-clip: text; /* Para navegadores WebKit */
+    background-clip: text;
+    color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    font-size: 48px
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.botao {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0, 186, 199);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.botao:hover:not(:disabled) {
+    background-color: rgb(0, 186, 199);
+}
+
+.botao:disabled {
+    background-color: #ccc; /* Cor de fundo quando desativado */
+    cursor: not-allowed; /* Cursor não permitido quando desativado */
+}
+
+.amigosContainer, .sorteioContainer {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-right: 10px; /* Adiciona espaço entre o texto e a imagem */
+}
+
+footer img {
+    width: 130px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
