@@ -79,3 +79,10 @@ footer img {
     width: 130px; /* Define a largura da imagem */
     height: auto; /* Mantém a proporção da imagem */
 }
+
+.form_input {
+    width: 100%; /* Define a largura do input */
+    padding: 10px; /* Aumenta o espaço interno para maior altura */
+    font-size: 16px; /* Aumenta o tamanho do texto dentro do input */
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+}
